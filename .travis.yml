@@ -132,11 +132,11 @@ jobs:
 
     #################### Jobs to run on every pull request ####################
   # osx was disabled because it is very slow to start (can delay builds by 30 minutes)
-  # - os: osx
-  #   osx_image: xcode9
-  #   env:
-  #     - TOOLSET=clang
-  #     - CXXSTD=03,11
+    - os: osx
+      osx_image: xcode9
+      env:
+        - TOOLSET=clang
+        - CXXSTD=03,11
 
     #################### Jobs to run on pushes to master, develop ###################
 
